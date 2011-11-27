@@ -23,13 +23,6 @@ A template for user input requests.
 @version: 1.0
 @date: 2011-11-26
 
-@todo: Permettere di impostare un timer per selezionare il valore di default
-    (non quello di auto!) dopo un certo tempo.
-@todo: Permettere di inserire piu' valori in prompt successivi, generando cosi'
-    una lista.
-@todo: Mostrare automaticamente, accanto a prompt o a wrong, tutti i valori
-    possibili per l'input.
-
 @var automode: If True, don't ask the user but use the auto input instead.
 """
 

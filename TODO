@@ -1,0 +1,5 @@
+* Expand README, add examples.
+* Set up a timer for selecting the default (not auto!) value after a specified
+  time itnerval.
+* Allow a series of consecutive input requests to generate a list.
+* Show automatically, next to prompt or wrong, all the acceptable input values.
