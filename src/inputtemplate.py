@@ -1,5 +1,5 @@
 # InputTemplate class - A template for Python input requests.
-# Copyright (C) 2011 Dario Giovannetti <dev@dariogiovannetti.net>
+# Copyright (C) 2011-2014 Dario Giovannetti <dev@dariogiovannetti.net>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,11 +17,9 @@
 """
 A template for user input requests.
 
-@author: Dario Giovannetti
-@copyright: Copyright (C) 2011 Dario Giovannetti <dev@dariogiovannetti.net>
+@author: Dario Giovannetti <dev@dariogiovannetti.net>
 @license: GPLv3
 @version: 1.0
-@date: 2011-11-26
 
 @var automode: If True, don't ask the user but use the auto input instead.
 """
