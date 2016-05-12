@@ -30,25 +30,25 @@ automode = False
 class InputTemplate():
     """
     A template for user input requests.
-    
+
     @ivar group: The name of the group with the input string.
     @ivar string: The original input string.
     """
     def __init__(self, prompt='', inputs={}, default=None, auto=None, wrong='',
-                                                              ignorecase=True):
+                 ignorecase=True):
         """
         Store a value from user input according to a dictionary, and also store
         the user input itself.
-        
+
         @param prompt: The prompt message.
         @type prompt: string
         @param inputs: A dictionary with the possible input strings as tuples,
             structured this way::
-            
+
               group: (input, input, ...),
               group: (input, input, ...),
               ...
-                       
+
             Note that if an input belongs to more groups, only the last
             occurrence will be considered (cascading mode).
         @type inputs: dictionary
@@ -70,7 +70,7 @@ class InputTemplate():
         @param ignorecase: If True (default) ignore input case, if False use
             case.
         @type ignorecase: boolean
-        
+
         @raise NoAutoInputValueError: Raised if L{auto} is left unset, or set
             to None, and automode (global) is True.
         """
@@ -80,15 +80,15 @@ class InputTemplate():
                 if ignorecase:
                     v = v.lower()
                 inverted[v] = g
-        
+
         if automode:
-            if auto != None:
+            if auto is not None:
                 self.group = auto
                 self.string = auto
             else:
-                raise NoAutoInputValueError('AutoInput mode is on, but there '
-                                            'is no \'auto\' value set')
-        elif default == None:
+                raise NoAutoInputValueError("AutoInput mode is on, but there "
+                                            "is no 'auto' value set")
+        elif default is not None:
             while True:
                 ans = input(prompt)
                 if ignorecase:
